@@ -23,11 +23,24 @@ A simple command-line tool to calculate workdays between two dates, with support
 
 ## Holidays File Format
 
-The holidays file must exist and contain at least one valid holiday date. Dates should be specified in YYYY-MM-DD format, separated by commas:
+The holidays file must exist and contain at least one valid holiday date. Dates should be in YYYY-MM-DD format.
 
+The file supports two formats:
+
+### Comma-separated format
 ```
 2025-01-01,2025-01-20,2025-02-17,2025-05-26
 ```
+
+### Newline-delineated format
+```
+2025-01-01
+2025-01-20
+2025-02-17
+2025-05-26
+```
+
+You can also mix both formats in the same file.
 
 ### Error Handling
 
